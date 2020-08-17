@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 
 public class CommonUtil {
 
-    public static final String PROJECT_NAME = "Myventory Service - 2020";
-    public static final String COMPANY_NAME_DEFAULT = "Myentory S.A.S";
+    public static final String PROJECT_NAME = "SCHEDULE PILOTO Service - 2020";
+    public static final String COMPANY_NAME_DEFAULT = "SCHEDULE S.A.S";
     public static final String TYPE_PLAIN = "text/plain";
     public static final String TYPE_HTML = "text/html";
     public static final String ENCODING_DEFAULT = "UTF-8";

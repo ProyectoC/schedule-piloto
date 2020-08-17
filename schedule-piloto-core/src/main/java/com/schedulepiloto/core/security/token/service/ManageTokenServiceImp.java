@@ -54,7 +54,7 @@ public class ManageTokenServiceImp implements ManageTokenService {
         } catch (JWTCreationException exception) {
             LOGGER.error(ERROR_TOKEN_USER_CREATION, exception.getMessage());
         } catch (SchedulePilotoException ex) {
-            LOGGER.error(ERROR_TOKEN_USER_CREATION, ex.getMessage());
+            LOGGER.error(ERROR_TOKEN_TYPE_NOT_FOUND, ex.getMessage());
         }
         return null;
     }
@@ -73,7 +73,7 @@ public class ManageTokenServiceImp implements ManageTokenService {
         } catch (NoSuchAlgorithmException | UnsupportedEncodingException ex) {
             throw new RuntimeException(ex);
         } catch (SchedulePilotoException ex) {
-            LOGGER.error(ERROR_TOKEN_EMAIL_CREATION, ex.getMessage());
+            LOGGER.error(ERROR_TOKEN_USER_ACTIVATION_CREATION, ex.getMessage());
         }
         return null;
     }

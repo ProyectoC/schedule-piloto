@@ -29,7 +29,8 @@ public interface ManageTokenService {
     String ERROR_TOKEN_USER_CREATION = "ERROR CREATING TOKEN (User): {}";
     String ERROR_TOKEN_USER_VALIDATION_UNSUPPORTED = "ERROR VALIDATING TOKEN (User) UNSUPPORTED: {}";
     String ERROR_TOKEN_USER_VALIDATION = "ERROR VALIDATING TOKEN (User): {}";
-    String ERROR_TOKEN_EMAIL_CREATION = "ERROR CREATING TOKEN (Email Validation): {}";
+    String ERROR_TOKEN_USER_ACTIVATION_CREATION = "ERROR CREATING TOKEN (User Activation): {}";
+    String ERROR_TOKEN_TYPE_NOT_FOUND = "ERROR TOKEN TYPE NOT FOUND: {}";
 
     // Methods
     TokenDto createUserAccountAuthToken(String userName, String[] authorities);

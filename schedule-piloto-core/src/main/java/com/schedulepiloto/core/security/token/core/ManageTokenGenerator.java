@@ -36,7 +36,7 @@ public interface ManageTokenGenerator {
         t.withIssuedAt(Calendar.getInstance().getTime());
         t.withNotBefore(Calendar.getInstance().getTime());
         t.withExpiresAt(calendar.getTime());
-        t.withIssuer("Cristhian Castillo");
+        t.withIssuer("Schedule Piloto");
         t.withArrayClaim("scopes", authorities);
         return t.sign(algorithm);
     }
